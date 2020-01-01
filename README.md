@@ -14,6 +14,8 @@ Repozitář se skládá te tří projektů:
 
 3. `PGRF3_metal_texture` - Projekt, kde je výstupem trojúhelník vybarvený vzorem textury.
 
+Pokud v tutoriálu naleznete jakoukoli chybu, proveďte příslušné akce pro opravu zde na GitHubu. Účelem tohoto tutoriálu je poskytnout informační základ pro samostatné vytvoření úloh pro předmět. Vylepšením tutoriálu proto pomůžeme dalším ročníkům.
+
 ## Příprava prostředí
 
 Pro vývoj aplikací pro Apple zařízení je zapotřebí instalace vývojového prostředí `XCode` - dostupné z `app Store` nebo betaverze z `developer.apple.com`. Samotný XCode nabízí prostředky pro vývoj, testování, debugging, publikaci aplikací a mnoho dalšího. Není potřebné instalovat žádné další programy ani knihovny - vše potřebné pro tento tutoriál již XCode obsahuje.
