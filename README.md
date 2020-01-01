@@ -4,6 +4,8 @@ Tento tutoriál vznikl jako ukázka programování grafické karty na zařízen�
 
 Od příchodu macOS Mojave 10.14 označuje Apple OpenGL a OpenCL jako zastaralé API a doporučuje vývoj grafických a výpočetních aplikací s využitím API Metal nebo MetalKit, které jsou vyvíjené od roku 2014 a běží na strojích s procesorem A7 a vyšším.
 
+Pro zjednodušení práce s maticemi je využívána třída `float4x4+Extensions` z portálu `raywenderlich.com`.
+
 ## Příprava prostředí
 
 Pro vývoj aplikací pro Apple zařízení je zapotřebí instalace vývojového prostředí `XCode` - dostupné z `app Store` nebo betaverze z `developer.apple.com`. Samotný XCode nabízí prostředky pro vývoj, testování, debugging, publikaci aplikací a mnoho dalšího. Není potřebné instalovat žádné další programy ani knihovny - vše potřebné pro tento tutoriál již XCode obsahuje.
@@ -13,21 +15,47 @@ Pro vývoj aplikací pro Apple zařízení je zapotřebí instalace vývojového
 Po instalaci a spuštění XCode se zobrazí nabídka s možností vytvoření nových projektů, nebo naklonování existujícího z Gitu.
 
 Zvolíme pro jaký OS budeme aplikaci vyvíjet. Pro účely tohoto tutoriálu zvolíme `macOS` a `App`, potvrdíme.
+
+![GitHub Logo](/Tutorial_screens/create1.png)
+
 V následujícím kroku vyplníme údaje o aplikaci. Jako tým zvolíme účet, kde je v závorce uvedeno (individual), tím se vyhneme nutnosti vytváření certifikátů pro vývoj. Ty budou vytvořeny automaticky. Jazyk nastavíme na `Swift` a potvrdíme.
+
+![GitHub Logo](/Tutorial_screens/create2.png)
 
 V následujícím kroku stačí pouze vybrat umístění aplikace a potvrdit tlačítkem `Create`.
 
 Po vytvoření nám bude zobrazeno výchozí rozvržení aplikace a otevře se námi vytvořený projekt, jehož soubory uvidíme v navigačním sloupci vlevo.
 
+![GitHub Logo](/Tutorial_screens/layout1.png)
+
 ## Základní pojmy
 
+`ViewController` - Hlavní View Controller, který řídí obsah a akce v zobrazeném okně.
 
+`MTKViewDelegate` - Delegát MTKView, stará se o překreslování scény a adaptaci při změně velikosti plátna.
+
+`pipelineState` - Nastavení renderovací pipeline - formáty barev, blending, reference na VS a FS funkce.
+
+`commandQueue` - Posloupnost příkazů ke spuštění na GPU.
+
+`simd_float 3 - 4` - Datový typ pro definici vektorů.
+
+`MTLDevice` - Reference na aktuální zařízení.
+
+`renderEncoder` - Obsahuje nastavení pro renderování aktuálního snímku.
+
+`renderPassDescriptor` - Nastavení renderEncoderu.
+
+`drawIndexedPrimitives` - Metoda renderEncoderu, která zajistí vykreslení nastavené topologie (.triangle, .triangleStrip, .line, .lineStrip, .point, ...).
 
 ## Vykreslení objektu
 
 ### Vertex Shader (VS)
 
 Pro vytvoření VS vytvoříme příslušný soubor `cmd + N` nebo `file -> New File` a z nabídky vybereme Metal file.
+
+![GitHub Logo](/Tutorial_screens/newMetal1.png)
+
 Po vytvoření definujeme struktury, které budou do shaderu vstupovat a vystupovat. Jedná se o `VertexIn` a `VertexOut`. `VertexOut` bude sloužit jako struktura pro předávání dat mezi shadery. V tomto případě z VS do FS.
 
 ```Swift
@@ -445,12 +473,34 @@ Pro zaznamenání obrazovky slouží ikona kamery na spodní liště.
 
 Po přepnutí do režimu lazení se změní rozložení oken a zobrazí se seznam vláken s parametry a položkami, které je možné dále rozkliknout. Například můžeme po otevření položky `Geometry` zobrazit aktuální informace o jednotlivých vrcholech trojúhelníku.
 
+![GitHub Logo](/Tutorial_screens/debugGeom2.png)
+
+![GitHub Logo](/Tutorial_screens/debugGeom3.png)
+
 Nebo zobrazit námi načtenou texturu, která se předala našemu FS.
+
+![GitHub Logo](/Tutorial_screens/debugTex1.png)
 
 Z ladícího režimu se přepneme zpět kliknutím na šipku na spodní liště, nebo ukončením běhu aplikace tlačítkem stop.
 
 
-změna plátna podle okna
-
 # Užitečné odkazy a zdroje
+
+## Tutoriály
+
+Série tutoriálů začínající:
+
+https://www.raywenderlich.com/7475-metal-tutorial-getting-started
+
+https://www.raywenderlich.com/9211-moving-from-opengl-to-metal
+https://academy.realm.io/posts/3d-graphics-metal-swift/
+https://www.clientresourcesinc.com/2018/07/27/rendering-graphics-with-metalkit-swift-4-part-2/
+http://metalkit.org
+https://metalbyexample.com/modern-metal-1/
+
+## Užitečné zdroje
+
+https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf
+https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Render-Ctx/Render-Ctx.html
+https://developer.apple.com/documentation/metal/shader_authoring/developing_and_debugging_metal_shaders
 
