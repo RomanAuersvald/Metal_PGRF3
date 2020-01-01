@@ -504,3 +504,7 @@ https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf
 https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Render-Ctx/Render-Ctx.html
 https://developer.apple.com/documentation/metal/shader_authoring/developing_and_debugging_metal_shaders
 
+
+### Zdroje
+
+https://www.root.cz/zpravicky/apple-macos-10-14-jiz-oznacuje-opengl-a-opencl-za-zastarale/
