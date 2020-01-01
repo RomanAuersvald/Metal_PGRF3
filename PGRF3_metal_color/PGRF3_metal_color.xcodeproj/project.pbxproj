@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30FE482823BD6442003ADFBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE482723BD6442003ADFBA /* AppDelegate.swift */; };
+		30FE482A23BD6442003ADFBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE482923BD6442003ADFBA /* ViewController.swift */; };
+		30FE482C23BD6443003ADFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FE482B23BD6443003ADFBA /* Assets.xcassets */; };
+		30FE482F23BD6443003ADFBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FE482D23BD6443003ADFBA /* Main.storyboard */; };
+		30FE483823BD6455003ADFBA /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE483723BD6455003ADFBA /* float4x4+Extensions.swift */; };
+		30FE483A23BD645E003ADFBA /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE483923BD645E003ADFBA /* Vertex.swift */; };
+		30FE483E23BD6468003ADFBA /* VertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 30FE483C23BD6468003ADFBA /* VertexShader.metal */; };
+		30FE483F23BD6468003ADFBA /* FragmentShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 30FE483D23BD6468003ADFBA /* FragmentShader.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30FE482423BD6442003ADFBA /* PGRF3_metal_color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGRF3_metal_color.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FE482723BD6442003ADFBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30FE482923BD6442003ADFBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30FE482B23BD6443003ADFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30FE482E23BD6443003ADFBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30FE483023BD6443003ADFBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30FE483123BD6443003ADFBA /* PGRF3_metal_color.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PGRF3_metal_color.entitlements; sourceTree = "<group>"; };
+		30FE483723BD6455003ADFBA /* float4x4+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		30FE483923BD645E003ADFBA /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		30FE483C23BD6468003ADFBA /* VertexShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = VertexShader.metal; sourceTree = "<group>"; };
+		30FE483D23BD6468003ADFBA /* FragmentShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FragmentShader.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30FE482123BD6442003ADFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30FE481B23BD6442003ADFBA = {
+			isa = PBXGroup;
+			children = (
+				30FE482623BD6442003ADFBA /* PGRF3_metal_color */,
+				30FE482523BD6442003ADFBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30FE482523BD6442003ADFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30FE482423BD6442003ADFBA /* PGRF3_metal_color.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30FE482623BD6442003ADFBA /* PGRF3_metal_color */ = {
+			isa = PBXGroup;
+			children = (
+				30FE483B23BD6468003ADFBA /* Shaders */,
+				30FE482723BD6442003ADFBA /* AppDelegate.swift */,
+				30FE482923BD6442003ADFBA /* ViewController.swift */,
+				30FE482B23BD6443003ADFBA /* Assets.xcassets */,
+				30FE482D23BD6443003ADFBA /* Main.storyboard */,
+				30FE483923BD645E003ADFBA /* Vertex.swift */,
+				30FE483023BD6443003ADFBA /* Info.plist */,
+				30FE483123BD6443003ADFBA /* PGRF3_metal_color.entitlements */,
+				30FE483723BD6455003ADFBA /* float4x4+Extensions.swift */,
+			);
+			path = PGRF3_metal_color;
+			sourceTree = "<group>";
+		};
+		30FE483B23BD6468003ADFBA /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				30FE483C23BD6468003ADFBA /* VertexShader.metal */,
+				30FE483D23BD6468003ADFBA /* FragmentShader.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30FE482323BD6442003ADFBA /* PGRF3_metal_color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30FE483423BD6443003ADFBA /* Build configuration list for PBXNativeTarget "PGRF3_metal_color" */;
+			buildPhases = (
+				30FE482023BD6442003ADFBA /* Sources */,
+				30FE482123BD6442003ADFBA /* Frameworks */,
+				30FE482223BD6442003ADFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PGRF3_metal_color;
+			productName = PGRF3_metal_color;
+			productReference = 30FE482423BD6442003ADFBA /* PGRF3_metal_color.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30FE481C23BD6442003ADFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Default;
+				TargetAttributes = {
+					30FE482323BD6442003ADFBA = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 30FE481F23BD6442003ADFBA /* Build configuration list for PBXProject "PGRF3_metal_color" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30FE481B23BD6442003ADFBA;
+			productRefGroup = 30FE482523BD6442003ADFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30FE482323BD6442003ADFBA /* PGRF3_metal_color */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30FE482223BD6442003ADFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FE482C23BD6443003ADFBA /* Assets.xcassets in Resources */,
+				30FE482F23BD6443003ADFBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30FE482023BD6442003ADFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FE482A23BD6442003ADFBA /* ViewController.swift in Sources */,
+				30FE483A23BD645E003ADFBA /* Vertex.swift in Sources */,
+				30FE483F23BD6468003ADFBA /* FragmentShader.metal in Sources */,
+				30FE483823BD6455003ADFBA /* float4x4+Extensions.swift in Sources */,
+				30FE482823BD6442003ADFBA /* AppDelegate.swift in Sources */,
+				30FE483E23BD6468003ADFBA /* VertexShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30FE482D23BD6443003ADFBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30FE482E23BD6443003ADFBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30FE483223BD6443003ADFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30FE483323BD6443003ADFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		30FE483523BD6443003ADFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PGRF3_metal_color/PGRF3_metal_color.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2856EU3Z8S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PGRF3_metal_color/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.default.PGRF3-metal-color";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		30FE483623BD6443003ADFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PGRF3_metal_color/PGRF3_metal_color.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2856EU3Z8S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PGRF3_metal_color/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.default.PGRF3-metal-color";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30FE481F23BD6442003ADFBA /* Build configuration list for PBXProject "PGRF3_metal_color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FE483223BD6443003ADFBA /* Debug */,
+				30FE483323BD6443003ADFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30FE483423BD6443003ADFBA /* Build configuration list for PBXNativeTarget "PGRF3_metal_color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FE483523BD6443003ADFBA /* Debug */,
+				30FE483623BD6443003ADFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30FE481C23BD6442003ADFBA /* Project object */;
+}
