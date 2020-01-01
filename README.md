@@ -6,6 +6,14 @@ Od příchodu macOS Mojave 10.14 označuje Apple OpenGL a OpenCL jako zastaralé
 
 Pro zjednodušení práce s maticemi je využívána třída `float4x4+Extensions` z portálu `raywenderlich.com`.
 
+Repozitář se skládá te tří projektů:
+
+1. `PGRF3_metal_starter` - Založený projekt připravený pro postupné doplnění kódu do projektu.
+
+2. `PGRF3_metal_color` - Projekt, kde se po spuštění zobrazí trojúhelník vyplněný interpolovanými barvami.
+
+3. `PGRF3_metal_texture` - Projekt, kde je výstupem trojúhelník vybarvený vzorem textury.
+
 ## Příprava prostředí
 
 Pro vývoj aplikací pro Apple zařízení je zapotřebí instalace vývojového prostředí `XCode` - dostupné z `app Store` nebo betaverze z `developer.apple.com`. Samotný XCode nabízí prostředky pro vývoj, testování, debugging, publikaci aplikací a mnoho dalšího. Není potřebné instalovat žádné další programy ani knihovny - vše potřebné pro tento tutoriál již XCode obsahuje.
