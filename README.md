@@ -198,8 +198,14 @@ struct Vertex {
     var texcord: vector_float2
 }
 ```
+Vytvoříme globální proměnnou `vertexBuffer` v našem `ViewControlleru`.
 
-Tuto strukturu budeme také kódovat pro použití v našem VS, proto musí obsahovat všechny potřebné parametry.
+```Swift
+    /// pole vrcholů objektu
+    var vertexBuffer = [Vertex]()
+```
+
+Tuto strukturu budeme také kódovat pro použití v našem VS, proto musí obsahovat všechny potřebné parametry. 
 
 Pro naši ukázku zobrazíme trojúhelník, který bude definován Vertexy, kde každý bude mít jinou barvu a po vykreslení bude trojúhelník vybarven jejich interpolací.
 
@@ -238,6 +244,13 @@ struct SceneMatricesfloat4x4 {
 }
 ```
 
+Vytvoříme globální proměnnou `sceneMatrices` v našem `ViewControlleru`.
+
+```Swift
+    /// globální matice scény
+    var sceneMatrices : SceneMatricesfloat4x4!
+```
+    
 Obě matice jsou formátu `float4x4`, což označuje matici 4x4 typu Float.
 Matice inicializujeme přidáním následující funkce do `ViewController.swift`.
 
