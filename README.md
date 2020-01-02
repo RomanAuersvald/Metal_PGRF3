@@ -1,6 +1,6 @@
 # Metal_PGRF3
 
-Tento tutoriál vznikl jako ukázka programování grafické karty na zařízeních z ekosystému Apple (Mac, iPad, iPhone, Apple TV), za použití knihovny Metal pro účely výuky PGRF3 na FIM UHK.
+Tento tutoriál vznikl jako ukázka programování grafické karty na zařízeních z ekosystému Apple (Mac, iPad, iPhone, Apple TV), za použití knihovny Metal pro účely výuky PGRF3 na FIM UHK. Tutoriál je dostupný na adrese: https://github.com/RomanAuersvald/Metal_PGRF3 
 
 Od příchodu macOS Mojave 10.14 označuje Apple OpenGL a OpenCL jako zastaralé API a doporučuje vývoj grafických a výpočetních aplikací s využitím API Metal nebo MetalKit, které jsou vyvíjené od roku 2014 a běží na strojích s procesorem A7 a vyšším.
 
